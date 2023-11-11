@@ -1,0 +1,29 @@
+@import '../../../variables-dark.scss';
+.search {
+    position: relative;
+}
+
+.search__input {
+    min-height: 50px;
+    padding-left: 23px;
+    font-size: 20px;
+    color: $white-300;
+    line-height: 20.9px;
+    border: none;
+    background: none;
+    border-radius: 25px;
+    background: $gray-100;
+    min-width: 420px;
+    transition: all 0.15s ease;
+    outline: 1px solid transparent;
+    &:focus {
+        outline: 1px solid $white-300;
+    }
+}
+
+.search__icon {
+    position: absolute;
+    top: 50%; /* позиция сверху по вертикали на 50% */
+    transform: translateY(-50%);
+    right: 16px;
+}

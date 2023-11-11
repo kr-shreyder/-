@@ -25,7 +25,14 @@ module.exports = {
         rules: [
             {
                 test: /\.(css|s(a|c)ss)$/,
-                use: ["style-loader", "css-loader", "sass-loader"]
+                use: ["style-loader", "css-loader", "sass-loader",
+                {
+                    loader: "sass-loader",
+                    options: {
+                      prependData: `@import "~normalize.css/normalize";`
+                    }
+                  }
+            ]
             },
             {
                 test: /\.(jpg|jpeg|png|svg)/,

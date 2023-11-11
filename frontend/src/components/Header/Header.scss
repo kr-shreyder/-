@@ -1,0 +1,12 @@
+.header {
+    display: flex;
+    padding: 24px 50px;
+    font-size: 0;
+}
+
+.header__details {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+}

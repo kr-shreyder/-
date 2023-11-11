@@ -1,0 +1,8 @@
+@import 'variables-dark';
+@import "~normalize.css/normalize";
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap');
+
+body {
+    background: $background-color;
+    font-family: 'Jost', 'Inter', sans-serif;;
+}
