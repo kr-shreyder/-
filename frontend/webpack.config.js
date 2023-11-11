@@ -26,12 +26,6 @@ module.exports = {
             {
                 test: /\.(css|s(a|c)ss)$/,
                 use: ["style-loader", "css-loader", "sass-loader",
-                {
-                    loader: "sass-loader",
-                    options: {
-                      prependData: `@import "~normalize.css/normalize";`
-                    }
-                  }
             ]
             },
             {
