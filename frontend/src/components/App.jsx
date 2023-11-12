@@ -8,7 +8,6 @@ const App = () => {
         <div className='app'>
             <Header />
             <Home />
-            продам арбузы
         </div>
     );
 };
