@@ -11,7 +11,51 @@
 
 .header__details {
     display: flex;
+    align-items: center;
     gap: 30px;
     list-style: none;
     padding: 0;
+}
+
+.header__link {
+    color: $white-100;
+    text-decoration: none;
+}
+
+.profile__block {
+    display: flex;
+}
+
+.profile__link {
+    color: white;
+    text-decoration: none;
+
+    &:not(:first-of-type) {
+        margin-left: .5rem;
+    }
+}
+
+.profile__login {
+    font-size: 20px;
+    font-weight: 100;
+    border-radius: 25.73px;
+    background-color: $gray-100;
+    padding: .6rem 1.2rem;
+    transition: .2s;
+    &:hover {
+        background-color: $white-300;
+    }
+}
+
+.profile__register {
+    font-size: 20px;
+    font-weight: 100;
+    margin-right: .5rem;
+    border-radius: 25.73px;
+    background-color: $accent-color;
+    padding: .6rem 1.2rem;
+    transition: .2s;
+    &:hover {
+        opacity: .5
+    }
 }
