@@ -6,6 +6,12 @@ import arrows from '@assets/arrows.svg';
 import lines from '@assets/lines.svg';
 import photo from '@assets/photo-hero.png';
 import plus from '@assets/plus-circle.svg';
+import gamepad from '@assets/gamepad.svg';
+import star from '@assets/decorate-star.svg';
+import ad1 from '@assets/ad-purple.png';
+import ad2 from '@assets/ad-pazle.png';
+import ad3 from '@assets/ad-player.png';
+import games from '@assets/games-list.png'
 const Hero = () => {
     return (
         <section className="hero">
@@ -70,16 +76,29 @@ const Hero = () => {
                             </div>
                         </div>
                     </li>
-                    <li className="hero__card"></li>
+                    <li className="hero__card">
+                        <img src={star} alt="Decorate star" className="hero__star" />
+                    </li>
                     <li className="hero__card hero__card--bigger">
                         <img src={photo} alt="Photo for Hero card" className="hero__photo" />
                         <img src={lines} alt="Lines decorated Hero card" className="hero__lines" />
                     </li>
-                    <li className="hero__card"></li>
-                    <li className="hero__card"></li>
-                    <li className="hero__card"></li>
-                    <li className="hero__card"></li>
-                    <li className="hero__card hero__card--higher"></li>
+                    <li className="hero__card">
+                        <img src={ad1} alt="Decorate poster" className="hero__cover" />
+                    </li>
+                    <li className="hero__card">
+                        <img src={gamepad} alt="Decorate gamepad" className="hero__gamepad" />
+                    </li>
+                    <li className="hero__card">
+                        <img src={ad2} alt="Decorate poster" className="hero__cover" />
+                    </li>
+                    <li className="hero__card">
+                        <img src={ad3} alt="Decorate poster" className="hero__cover" />
+                    </li>
+                    <li className="hero__card hero__card--higher">
+                        <p className="hero__about"><span className="hero__about hero__about--highlighted">Подписывайтесь</span> на самых интересных разработчиков, чтобы получать их игровые новинки самыми первыми</p>
+                        <img src={games} alt="Decorate images covers by games" className="hero__games" />
+                    </li>
                 </ul>
             </div>
         </section>
