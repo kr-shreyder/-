@@ -2,7 +2,7 @@ import React from 'react';
 import './Header.scss'; 
 import logo from '@assets/logo.svg';
 import Search from './Search/Search';
-import ThemeSwitcher from '../ThemeSwitcher/ThemeSwitcher';
+import ThemeSwitcher from './ThemeSwitcher/ThemeSwitcher';
 
 const Header = () => {
     return (
@@ -15,10 +15,24 @@ const Header = () => {
                         </a>
                     </li>
                     <li className="header__item">
-                        <Search />
+                        <Search/>
                     </li>
                     <li className="header__item">
                         <ThemeSwitcher/>
+                    </li>
+                    <li className="header__item">
+                        <div className="profile__block">
+                            <a href="/" className="profile__link">
+                                <p className="profile__login">
+                                    Вход
+                                </p>
+                            </a>
+                            <a href="/" className="profile__link">
+                                <p className="profile__register">
+                                    Регистрация
+                                </p>
+                            </a>
+                        </div>
                     </li>
                 </ul>
             </div>
