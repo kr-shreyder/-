@@ -1,0 +1,35 @@
+@import '@/variables-dark.scss';
+
+.theme-switcher {
+    display: flex;
+    border-radius: 25.73px;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+    font-size: 20px;
+    background: $gray-100;
+    padding: 0 0.6rem;
+    transition: all 0.15s ease;
+
+    &__btn {
+        font-weight: 500;
+        background-color: $gray-200;
+        border: none;
+        border-radius: 19.65px;
+        cursor: pointer;
+        color: white;
+        transition: .2s;
+        padding: 0.4rem 1rem;
+    
+        &:hover {
+            background-color: $white-300;
+        }
+        &:not(:first-of-type) {
+            margin-left: .35em;
+        }
+
+        &:focus {
+            background-color: $primary-color;
+        }
+    }
+}

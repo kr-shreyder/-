@@ -2,6 +2,7 @@ import React from 'react';
 import './Header.scss'; 
 import logo from '@assets/logo.svg';
 import Search from './Search/Search';
+import ThemeSwitcher from '../ThemeSwitcher/ThemeSwitcher';
 
 const Header = () => {
     return (
@@ -15,6 +16,9 @@ const Header = () => {
                     </li>
                     <li className="header__item">
                         <Search />
+                    </li>
+                    <li className="header__item">
+                        <ThemeSwitcher/>
                     </li>
                 </ul>
             </div>
