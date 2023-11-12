@@ -1,0 +1,39 @@
+@import '@/variables-dark.scss';
+.hero__wrapper {
+    padding: 60px 50px;
+    max-width: 1240px;
+    // margin: 0 auto;
+}
+
+.navigate {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.navigate__decoration {
+    height: 21px;
+    width: 21px;
+}
+
+.navigate__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.navigate__link {
+    color: $white-200;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 1;
+    &--active {
+        color: $white-100;
+    }
+    &:hover {
+        opacity: 0.85;
+    }
+}

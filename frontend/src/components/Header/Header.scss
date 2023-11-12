@@ -1,3 +1,4 @@
+@import '@/variables-dark.scss';
 .header {
     display: flex;
     padding: 24px 50px;
@@ -5,6 +6,7 @@
 }
 .header__wrapper {
     max-width: 1240px;
+    // margin: 0 auto;
 }
 
 .header__details {

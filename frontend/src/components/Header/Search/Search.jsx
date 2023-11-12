@@ -1,6 +1,6 @@
 import React from 'react';
 import './Search.scss';
-import searchIcon from '../../../assets/search-icon.svg';
+import searchIcon from '@assets/search-icon.svg';
 
 const SearchBar = () => {
     return (
