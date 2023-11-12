@@ -2,6 +2,7 @@ import React from 'react';
 import './Hero.scss';
 import decorateStarMini from '@assets/decorate-star-mini.svg';
 import cover from '@assets/cover-game1.png';
+import arrows from '@assets/arrows.svg';
 
 const Hero = () => {
     return (
@@ -40,8 +41,16 @@ const Hero = () => {
                         </div>
                     </div>
                 </div>
+                <div className="hero__info">
+                    <h1 className="hero__title">Публикуйся</h1>
+                    <h1 className="hero__title">обсуждай проекты</h1>
+                    <h1 className="hero__title"><span className='hero__title hero__title--highlighted'>продвигай</span> свои игры</h1>
+                    <div className="hero__details">
+                        <img src={arrows} alt="Hero Arrows Decorate" className="hero__arrows" />
+                        <p className="hero__desc">Расскажите о <span className="hero__desc hero__desc--highlighted">своих проектах</span>, <span className="hero__desc hero__desc--highlighted">оценивайте</span> работы коллег, и объединяйтесь в <span className="hero__desc hero__desc--highlighted">команды</span></p>
+                    </div>
+                </div>
             </div>
-            
         </section>
     );
 };
