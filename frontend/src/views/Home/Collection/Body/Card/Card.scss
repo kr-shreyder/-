@@ -1,0 +1,87 @@
+@import '@/variables-dark.scss';
+
+.card-game {
+    position: relative;
+    background-color: $gray-300;
+    padding: 20px;
+    border-radius: 30px;
+    width: 420px;
+    height: 526px;
+}
+
+.card-game__cover {
+    width: 420px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50px;
+    background-color: $white-300;
+}
+
+.card-game__info {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 16px;
+}
+
+.card-game__title {
+    font-size: 28px;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 34px;
+}
+
+.card-game__desc {
+    padding: 0;
+    margin: 0;
+    width: fit-content;
+    font-size: 24px;
+    font-weight: 400;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 400px;
+    max-height: 82px;
+}
+
+.card-game__link {
+    text-decoration: none;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 36px;
+}
+
+.card-game__more {
+    color: $white-100;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    transition: all 0.15s ease;
+    &:hover {
+        opacity: 0.85;
+    }
+}
+
+.card-game__arrow {
+    transition: all 0.15s ease;
+    &:hover {
+        & path {
+            fill: $primary-color;
+        }
+        & circle {
+            fill: $white-100;
+        }
+    }
+}

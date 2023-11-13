@@ -1,0 +1,75 @@
+@import '@/variables-dark.scss';
+.collection__head {
+    margin-top: 90px;
+    display: flex;
+    background: $gray-200;
+    padding: 32px;
+    border-radius: 36px;
+    justify-content: space-between;
+}
+
+.currently, .next-info {
+    cursor: pointer;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: none;
+    border: none;
+    color: $white-100;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.currently__text, .next-info__text {
+    padding: 17px 23px 18px;
+    text-transform: uppercase;
+    margin: 0;
+    border: 1px solid $white-100;
+    border-radius: 100px;
+    min-width: 160px;
+    transition: all 0.15s ease;
+    &:hover {
+        background-color: $white-100;
+        color: black;
+    }
+}
+
+.currently__arrow, .next-info__arrow {
+    transition: all 0.15s ease;
+    &:hover {
+        opacity: 0.85;
+    }
+}
+
+.collection__headline {
+    text-align: center;
+}
+.collection__name {
+    padding: 0;
+    margin: 0;
+    color: $white-100;
+    font-size: 28px;
+    font-weight: 600;
+}
+.collection__action {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 10px;
+}
+.collection__dot {
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 1px solid $white-100;
+        background: transparent;
+    &--active {
+        width: 12px;
+        height: 12px;
+        border: none;
+        background: $white-100;
+    }
+}
