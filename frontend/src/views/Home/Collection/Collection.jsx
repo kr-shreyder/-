@@ -5,7 +5,7 @@ import CollectionBody from './Body/Body';
 // import decorateStarMini from '@assets/decorate-star-mini.svg';
 const Collection = () => {
     return (
-        <section className="collection">
+        <section id="popular" className="collection">
             <CollectionHead />
             <CollectionBody />
         </section>

@@ -23,10 +23,15 @@ const CollectionBody = () => {
             </div>
             <ul className="collection__cards">
                 <li className="collection__card">
-                    <CardCollection />
+                    <CardCollection version='standart' />
                 </li>
-                <li className="collection__card"></li>
-                <li className="collection__card"></li>
+                <li className="collection__card">
+                    <CardCollection version='solid' />
+                </li>
+                <li className="collection__card">
+                    <CardCollection version='mini' />
+                    <CardCollection version='catalog' />
+                </li>
             </ul>
         </div>
     );

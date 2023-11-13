@@ -10,6 +10,8 @@
     justify-content: space-between;
     align-items: end;
     width: 100%;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .collection__caption {
@@ -56,6 +58,13 @@
 
 .collection__cards {
     list-style: none;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(372px, 1fr));
     gap: 20px; 
+}
+
+.collection__card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px
 }

@@ -24,7 +24,7 @@ const Hero = () => {
                                 <a href="/" className="navigate__link navigate__link--active">Главная</a>
                             </li>
                             <li className="navigate__item">
-                                <a href="/" className="navigate__link">Популярное</a>
+                                <a href="#popular" className="navigate__link">Популярное</a>
                             </li>
                             <li className="navigate__item">
                                 <a href="/" className="navigate__link">О нас</a>

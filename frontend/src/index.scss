@@ -4,7 +4,8 @@
 
 body {
     background: $background-color;
-    font-family: 'Jost', 'Inter', sans-serif;;
+    font-family: 'Jost', 'Inter', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .visually-hidden {
