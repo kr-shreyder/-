@@ -17,6 +17,12 @@
     gap: 30px;
     list-style: none;
     padding: 0;
+    justify-content: space-between;
+}
+
+.header__item {
+    display: flex;
+    align-items: center;
 }
 
 .header__link {
@@ -35,6 +41,11 @@
     &:not(:first-of-type) {
         margin-left: .5rem;
     }
+}
+
+
+.header__block {
+    display: flex;
 }
 
 .profile__login {

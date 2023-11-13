@@ -10,18 +10,13 @@ const Header = () => {
             <div className="header__wrapper">
                 <ul className="header__details">
                     <li className="header__item">
-                        <a href="/" className="header__link">
-                            <img src={logo} alt="PolyGames Logo Image" className="header__logo" />
-                        </a>
+                            <a href="/" className="header__link">
+                                <img src={logo} alt="PolyGames Logo Image" className="header__logo" />
+                            </a>
+                            <Search/>
                     </li>
                     <li className="header__item">
-                        <Search/>
-                    </li>
-                    <li className="header__item">
-                        <ThemeSwitcher/>
-                    </li>
-                    <li className="header__item">
-                        <div className="profile__block">
+                            <ThemeSwitcher/>
                             <a href="/" className="profile__link">
                                 <p className="profile__login">
                                     Вход
@@ -31,8 +26,7 @@ const Header = () => {
                                 <p className="profile__register">
                                     Регистрация
                                 </p>
-                            </a>
-                        </div>
+                            </a> 
                     </li>
                 </ul>
             </div>
