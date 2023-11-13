@@ -1,12 +1,14 @@
 @import '@/variables-dark.scss';
 .header {
     display: flex;
+    justify-content: start;
     padding: 24px 50px;
     font-size: 0;
 }
 .header__wrapper {
-    max-width: 1240px;
-    // margin: 0 auto;
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 1440px;
 }
 
 .header__details {
