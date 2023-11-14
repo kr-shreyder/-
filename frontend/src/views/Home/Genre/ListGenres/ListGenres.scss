@@ -1,0 +1,9 @@
+@import '@/variables-dark.scss';
+.list-genres {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+    margin-top: 60px;
+}
