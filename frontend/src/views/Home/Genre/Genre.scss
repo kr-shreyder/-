@@ -31,3 +31,10 @@
     font-size: 26px;
     font-weight: 400;
 }
+
+.genre__body {
+    display: flex;
+    justify-content: space-between;
+    gap: 140px;
+    margin-top: 40px;
+}

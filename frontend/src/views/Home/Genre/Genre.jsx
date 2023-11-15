@@ -1,6 +1,7 @@
 import React from 'react';
 import './Genre.scss';
 import ListGenres from './ListGenres/ListGenres.jsx';
+import GamesSlider from './GamesSlider/GamesSlider.jsx';
 const Genre = () => {
     return (
         <section id="genre" className="genre">
@@ -13,7 +14,10 @@ const Genre = () => {
                     <h2 className="genre__title">игры разных жанров</h2>
                 </div>
             </div>
-            <ListGenres />
+            <div className="genre__body">
+                <ListGenres />
+                <GamesSlider />
+            </div>
         </section>
     );
 };

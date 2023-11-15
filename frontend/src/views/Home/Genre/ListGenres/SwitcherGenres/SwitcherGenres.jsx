@@ -1,8 +1,8 @@
 import React from 'react';
 import './SwitcherGenres.scss';
-const SwitcherGenres = ({ children, active }) => {
+const SwitcherGenres = ({ children, active, onClick }) => {
     return (
-        <button className={`list-genres__button switcher-genres ${active ? 'switcher-genres--active' : ''}`}>
+        <button onClick={onClick} className={`list-genres__button switcher-genres ${active ? 'switcher-genres--active' : ''}`}>
             <p className="switcher-genres__text">{children}</p>
             <svg className="switcher-genres__arrow" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
                 <circle cx="25" cy="25" r="25" fill="#FF5731"/>
