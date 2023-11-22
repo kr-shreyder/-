@@ -1,22 +1,31 @@
 import React, { useState } from 'react';
 import './GamesSlider.scss';
-import cover1 from '@assets/cover-game2.png'
-import cover2 from '@assets/cover-game3.png'
-import cover3 from '@assets/avatar1.png'
+import cover1 from '@assets/cover-game1.png'
+import cover2 from '@assets/cover-game2.png'
+import cover3 from '@assets/cover-game3.png'
 import cover4 from '@assets/cover-game4.png'
-import cover5 from '@assets/cover-game1.png'
-
+import cover5 from '@assets/cover-game5.png'
+import cover6 from '@assets/cover-game6.png'
+import cover7 from '@assets/cover-game7.png'
+import cover8 from '@assets/cover-game8.png'
+import cover9 from '@assets/cover-game9.png'
+import cover10 from '@assets/cover-game10.png'
+import cover11 from '@assets/cover-game11.png'
+import cover12 from '@assets/cover-game12.png'
+import cover13 from '@assets/cover-game13.png'
+import cover14 from '@assets/cover-game14.png'
+import cover15 from '@assets/cover-game15.png'
 
 const GamesSlider = () => {
     const images = [];
 
-    for (let i = 1; i <= 12; i++) {
+    for (let i = 1; i <= 15; i++) {
     const randomRating = (Math.random() * (5 - 1) + 1).toFixed(1); // Генерация случайного рейтинга от 1 до 5
     const randomImageId = Math.floor(Math.random() * 1000); // Генерация случайного идентификатора для изображения
 
     const image = {
         title: `Игра ${i}`,
-        url: [cover1,cover2,cover3,cover4, cover5][(i-1)%5], // Генерация ссылки на случайное изображение с помощью Lorem Picsum
+        url: [cover1,cover2,cover3,cover4, cover5,cover6,cover7,cover8,cover9, cover10, cover11, cover12, cover13, cover14, cover15][(i-1)%15], // Генерация ссылки на случайное изображение с помощью Lorem Picsum
         rating: randomRating,
         genre: 'Приключения',
     };
