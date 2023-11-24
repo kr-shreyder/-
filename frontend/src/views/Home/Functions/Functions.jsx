@@ -11,7 +11,7 @@ const Functions = () => {
             <h1 className="functions__title">Функции PolyGames</h1>
             <ul className="functions__list">
                 <li className="functions__item">
-                    <Ability data={{ title: 'Каталог игр', number: 1, desc: '123 Игры', url: '/catalog', image: ability1 }} />
+                    <Ability data={{ title: 'Каталог игр', number: 1, desc: '123 Игры', url: '/games', image: ability1 }} />
                 </li>
                 <li className="functions__item">
                     <Ability data={{ title: 'Команды', number: 2, desc: '23 Команды', url: '/teams', image: ability2 }} />

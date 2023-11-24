@@ -4,8 +4,9 @@ import { Link } from 'react-router-dom';
 import logo from '@assets/logo.svg';
 import Search from './Search/Search';
 import ThemeSwitcher from './ThemeSwitcher/ThemeSwitcher';
+import MenuButton from './MenuButton/MenuButton';
 
-const Header = () => {
+const Header = ({ openMenu }) => {
     return (
         <header class="header">
             <div className="header__wrapper">
@@ -17,7 +18,8 @@ const Header = () => {
                             <Search/>
                     </li>
                     <li className="header__item">
-                            <ThemeSwitcher/>
+                        <ThemeSwitcher/>
+                        <div className="header__auth">
                             <Link to="/auth" className="profile__link">
                                 <p className="profile__login">
                                     Вход
@@ -28,6 +30,8 @@ const Header = () => {
                                     Регистрация
                                 </p>
                             </Link> 
+                        </div>
+                        <MenuButton clickButton={openMenu}/>
                     </li>
                 </ul>
             </div>
