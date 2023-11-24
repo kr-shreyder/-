@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Ability.scss';
 
 const Ability = ({ data }) => {
     const { title, number, desc, url, image } = data;
 
     return (
-        <a href={url} className="functions__ability ability">
+        <Link to={url} className="functions__ability ability">
             <div className="ability__info">
                 <p className="ability__number">{number}</p>
                 <h3 className="ability__title">{title}</h3>
@@ -19,7 +20,7 @@ const Ability = ({ data }) => {
                     <path d="M14.1665 19.8333L29.7498 4.25" stroke="white" stroke-width="2.83333" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
             </div>
-        </a>
+        </Link>
     );
 };
 
