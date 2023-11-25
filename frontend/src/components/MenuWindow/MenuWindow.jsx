@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './MenuWindow.scss';
 import { Link, useLocation } from 'react-router-dom';
+import bgGrid from '@assets/bg-grid.svg'
 
 const MenuWindow = ({ isOpen, closeMenu }) => {
     const location = useLocation();
@@ -54,6 +55,7 @@ const MenuWindow = ({ isOpen, closeMenu }) => {
       <p className="menu-window__copyright">
         ©2023, Московский политехнический университет
       </p>
+      <img src={bgGrid} alt="Grid" className="menu-window__bg" />
     </div>
   );
 }
