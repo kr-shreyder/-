@@ -1,6 +1,7 @@
 @import '@/variables-dark.scss';
 
 .ad-banner {
+    position: relative;
     display: flex;
     align-items: flex-end;
     border-radius: 16px;
@@ -96,4 +97,13 @@
             }
         }
     }
+}
+
+.ad-banner__image {
+    border-radius: 16px;
+    z-index: -1;
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
 }

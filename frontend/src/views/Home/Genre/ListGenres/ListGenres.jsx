@@ -23,8 +23,8 @@ const ListGenres = () => {
     
     return (
         <ul className="genre__list-genres list-genres">
-            {popularGenres.map((genreObj) => (
-            <li className="list-genres__item">
+            {popularGenres.map((genreObj, index) => (
+            <li key={index} className="list-genres__item">
                 <SwitcherGenres key={genreObj.genre} onClick={() => handleGenreClick(genreObj.genre)} active={activeGenre === genreObj.genre}>{genreObj.genre}</SwitcherGenres>
             </li>
             ))}

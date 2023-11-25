@@ -1,11 +1,11 @@
 @import '@/variables-dark.scss';
 
-.ad-slider {
-    display: flex;
+.ads-slider {
+    display: flex !important;
     gap: 24px;
 }
 
-.ad-slider__list {
+.ads-slider__list {
     display: flex;
     flex-direction: column;
     list-style: none;

@@ -55,19 +55,19 @@ const game5 = {
 }
 function AdSlider() {
     return (  
-        <section className="ad-slider">
+        <section className="ads-slider">
             <AdBanner obj={game1} />
-            <ul className="ad-slider__list">
-                <li className="ad-slider__item">
+            <ul className="ads-slider__list">
+                <li className="ads-slider__item">
                     <AdBand obj={game2} />
                 </li>
-                <li className="ad-slider__item">
+                <li className="ads-slider__item">
                     <AdBand obj={game3} />
                 </li>
-                <li className="ad-slider__item">
+                <li className="ads-slider__item">
                     <AdBand obj={game4} />
                 </li>
-                <li className="ad-slider__item">
+                <li className="ads-slider__item">
                     <AdBand obj={game5} />
                 </li>
             </ul>

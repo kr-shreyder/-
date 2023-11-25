@@ -3,7 +3,8 @@ import './AdBanner.scss'
 import { Link } from 'react-router-dom';
 function AdBanner({obj}) {
     return (  
-        <div className="ad-banner"  style={{ backgroundImage: `url(${obj.image})` }}>
+        <div className="ad-banner">
+            <img src={obj.image} alt="Cover this Banner" className="ad-banner__image" />
             <div className="ad-banner__info">
                 <h2 className="ad-banner__title">{obj.name}</h2>
                 <p className="ad-banner__desc">{obj.desc}</p>
