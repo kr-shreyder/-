@@ -4,11 +4,11 @@ import { Link, useLocation } from 'react-router-dom';
 
 const MenuWindow = ({ isOpen, closeMenu }) => {
     const location = useLocation();
-  const [currentPath, setCurrentPath] = useState(location.pathname);
+    const [currentPath, setCurrentPath] = useState(location.pathname);
 
-  useEffect(() => {
-    setCurrentPath(location.pathname);
-  }, [location.pathname]);
+    useEffect(() => {
+        setCurrentPath(location.pathname);
+    }, [location.pathname]);
   return (
     <div className={`menu-window ${isOpen ? 'menu-window--open' : ''}`}>
       <p className="menu-window__title">Навигация по сайту</p>
@@ -51,6 +51,9 @@ const MenuWindow = ({ isOpen, closeMenu }) => {
             <path d="M19 32L32 19" stroke="#EFEFED" stroke-width="1.88679" stroke-linecap="round"/>
         </svg>
       </button>
+      <p className="menu-window__copyright">
+        ©2023, Московский политехнический университет
+      </p>
     </div>
   );
 }

@@ -23,6 +23,8 @@ const App = () => {
     }
     return (
         <div className='app'>
+            {isMenuOpen && <div className="jumbo jumbo--dark">
+            </div>}
             <BrowserRouter>
                 <div className={isMenuOpen?'screen screen--left':'screen'}>
                     <Header openMenu={openMenu}/>

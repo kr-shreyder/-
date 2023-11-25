@@ -12,14 +12,14 @@
     height: calc(100% - 80px);
     background-color: $background-color;
     transition: all 1.2s ease;
-    border-radius: 12px;
+    border-radius: 12px 0 0 12px;
     border: 1px solid transparent;  
 }
   
   .menu-window--open {
     right: 0;
     top: 40px;
-    border: 1px solid $gray-300;
+    border: 1px solid $gray-100;
     // margin: 40px 12px;
   }
 
@@ -43,15 +43,16 @@
 
 .menu-window__link {
     font-weight: 500;
-    font-size: 52px;
+    font-size: 48px;
     text-decoration: none;
     color: $white-200;
     display: flex;
     gap: 12px;
     align-items: flex-end;
-    transition: all 0.15s ease;
+    transition: all 0.5s ease;
     &--active {
         color: $white-100;
+        padding-left: 20px;
     }
     &:hover {
         opacity: 0.85;
@@ -83,4 +84,13 @@
     &:hover {
         opacity: 0.85;
     }
+}
+
+.menu-window__copyright {
+    position: absolute;
+    bottom: 10px;
+    padding: 0 10px 10px 60px;
+    font-size: 14px;
+    font-weight: 700;
+    color: $white-200;
 }
