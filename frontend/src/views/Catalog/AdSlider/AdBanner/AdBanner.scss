@@ -1,0 +1,99 @@
+@import '@/variables-dark.scss';
+
+.ad-banner {
+    display: flex;
+    align-items: flex-end;
+    border-radius: 16px;
+    max-width: 936px;
+    width: 100%;
+    height: 526px;
+    background-size: cover;
+    color: $white-100;
+    box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.50);
+}
+
+.ad-banner__info { 
+    background-color: $gray-200;
+    width: 480px;
+    border-radius: 8px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.50);
+}
+
+.ad-banner__title {
+    font-size: 36px;
+    padding: 0;
+    margin: 0 0 16px;
+}
+
+.ad-banner__desc {
+    font-size: 20px;
+    color: $white-200;
+    line-height: 28px;
+    padding: 0;
+    margin: 0 0 16px;
+}
+
+.ad-banner__tags {
+    display: flex;
+    font-size: 20px;
+    gap: 10px;
+    color: $accent-color;
+    & p {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.ad-banner__link {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.ad-banner__more {
+    color: $white-100;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    &:hover {
+        transition: all 0.15s ease;
+        opacity: 0.85;
+    }
+}
+
+.ad-banner__arrow {
+    &:hover {
+        & path {
+            transition: all 0.15s ease;
+            fill: $primary-color;
+        }
+        & circle {
+            transition: all 0.15s ease;
+            fill: $white-100;
+        }
+    }
+
+    &--solid {
+        & path {
+            fill: $primary-color;
+        }
+        & circle {
+            fill: $white-100;
+        }
+        &:hover {
+            & path {
+                transition: all 0.15s ease;
+                fill: $white-100;
+            }
+            & circle {
+                transition: all 0.15s ease;
+                fill: $primary-color;
+            }
+        }
+    }
+}
