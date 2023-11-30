@@ -1,13 +1,14 @@
 import './ThemeSwitcher.scss'
-import React from 'react'
+import React, {useState} from 'react'
 
-const ThemeSwitcher = () => {    
+const ThemeSwitcher = () => {
+    const [status, setStatus] = useState('dark');
     return (
         <div className='theme-switcher'>
-            <button className='theme-switcher__btn'>
-                Тёмная
+            <button onClick={() => setStatus('dark')} className={status=='dark'?'theme-switcher__btn theme-switcher__btn--active':'theme-switcher__btn'} >
+                Темная
             </button>
-            <button className='theme-switcher__btn'>
+            <button onClick={() => setStatus('light')} className={status=='light'?'theme-switcher__btn theme-switcher__btn--active':'theme-switcher__btn'}>
                 Светлая
             </button>
         </div>
