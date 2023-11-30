@@ -8,7 +8,7 @@ import MenuButton from './MenuButton/MenuButton';
 
 const Header = ({ openMenu }) => {
     return (
-        <header class="header">
+        <header className="header">
             <div className="header__wrapper">
                 <ul className="header__details">
                     <li className="header__item">

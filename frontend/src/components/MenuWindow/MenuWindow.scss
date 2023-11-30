@@ -72,14 +72,13 @@
 }
 
 .menu-window__button {
-    top: 40px;
-    right: 40px;
+    top: 24px;
+    right: 24px;
     position: absolute;
     cursor: pointer;
     background: none;
     border: none;
-    padding: 0;
-    margin: 0;
+    
     transition: all 0.15s ease;
     width: fit-content;
     &:hover {

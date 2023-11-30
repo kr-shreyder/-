@@ -1,0 +1,13 @@
+@import '@/variables-dark.scss';
+
+.ads-slider {
+    display: flex !important;
+    gap: 24px;
+}
+
+.ads-slider__list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: space-between;
+}
