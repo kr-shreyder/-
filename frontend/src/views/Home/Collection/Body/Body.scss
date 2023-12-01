@@ -1,4 +1,4 @@
-@import '@/variables-dark.scss';
+@import '@/variables.scss';
 .collection__body {
     margin-top: 6px;
     background: $gray-200;
@@ -42,6 +42,7 @@
 .collection__number {
     font-size: 26px;
     font-weight: 400;
+    padding-top: 26px;
 }
 
 .collection__desc {
