@@ -31,7 +31,7 @@ func (s *server) CreateGame(w http.ResponseWriter, r *http.Request) {
 	//Description
 	req.Description = strings.TrimSpace(r.FormValue("description"))
 	//GenreID
-	genreIDString := r.FormValue("team_id")
+	genreIDString := r.FormValue("genre_id")
 	genreID, err := strconv.Atoi(genreIDString)
 	if err != nil {
 		s.sendError(fmt.Errorf("parsing team_id: %w", err), w)
@@ -41,7 +41,7 @@ func (s *server) CreateGame(w http.ResponseWriter, r *http.Request) {
 	// Получаем файл из формы запроса
 	file, header, err := r.FormFile("image")
 	if err != nil {
-		http.Error(w, fmt.Sprintf("parsing inage file: %s", err.Error()), http.StatusInternalServerError)
+		http.Error(w, fmt.Sprintf("parsing image file: %s", err.Error()), http.StatusInternalServerError)
 		return
 	}
 	defer file.Close()
@@ -50,7 +50,7 @@ func (s *server) CreateGame(w http.ResponseWriter, r *http.Request) {
 	imagePath := "./images/" + header.Filename
 	out, err := os.Create(imagePath)
 	if err != nil {
-		http.Error(w, fmt.Sprintf("Error saving image: %s", err), http.StatusInternalServerError)
+		http.Error(w, fmt.Sprintf("error saving image: %s", err), http.StatusInternalServerError)
 		return
 	}
 	defer out.Close()
@@ -58,7 +58,7 @@ func (s *server) CreateGame(w http.ResponseWriter, r *http.Request) {
 	// Копируем данные из загруженного файла в новый файл на сервере
 	_, err = io.Copy(out, file)
 	if err != nil {
-		http.Error(w, fmt.Sprintf("Error coping image: %s", err), http.StatusInternalServerError)
+		http.Error(w, fmt.Sprintf("error coping image: %s", err), http.StatusInternalServerError)
 		return
 	}
 	fmt.Fprintf(w, "Image uploaded successfully.")

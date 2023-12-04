@@ -60,7 +60,7 @@ func (d *driver) GetUserByLogin(ctx context.Context, login string) (*domain.User
 func (d *driver) DeleteUser(ctx context.Context, req *domain.DeleteUserRequest) error {
 	err := d.conn.QueryRow(ctx, `delete 
 									 from users 
-									 where id=$1`, req.UserId)
+									 where id=$1`, req.UserID)
 	if err != nil {
 		return fmt.Errorf("delete error %w", err)
 	}

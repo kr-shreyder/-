@@ -16,6 +16,11 @@ type Core interface {
 	UpdateGame(ctx context.Context, req *domain.UpdateGameRequest) (*domain.UpdateGameResponse, error)
 	DeleteGame(ctx context.Context, req *domain.DeleteGameRequest) (*domain.DeleteGameResponse, error)
 
+	CreateGenre(ctx context.Context, req *domain.CreateGenreRequest) (*domain.CreateGenreResponse, error)
+	GetGenre(ctx context.Context, req *domain.GetGenreRequest) (*domain.GetGenreResponse, error)
+	UpdateGenre(ctx context.Context, req *domain.UpdateGenreRequest) (*domain.UpdateGenreResponse, error)
+	DeleteGenre(ctx context.Context, req *domain.DeleteGenreRequest) (*domain.DeleteGenreResponse, error)
+
 	SignIn(ctx context.Context, req *domain.SignInRequest) (*domain.SignInResponse, error)
 	SignUp(ctx context.Context, req *domain.SignUpRequest) (*domain.SignUpResponse, error)
 

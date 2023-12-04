@@ -28,7 +28,7 @@ func (c *core) CreateGame(ctx context.Context, req *domain.CreateGameRequest) (*
 }
 
 func (c *core) GetGame(ctx context.Context, req *domain.GetGameRequest) (*domain.GetGameResponse, error) {
-	Game, err := c.repo.GetGame(ctx, req)
+	game, err := c.repo.GetGame(ctx, req)
 	if err != nil {
 		if errors.Is(err, database.ErrObjectNotFound) {
 			return nil, errcore.GameNotFoundError
@@ -37,7 +37,7 @@ func (c *core) GetGame(ctx context.Context, req *domain.GetGameRequest) (*domain
 		return nil, err
 	}
 
-	return &domain.GetGameResponse{Game: Game}, nil
+	return &domain.GetGameResponse{Game: game}, nil
 }
 
 func (c *core) UpdateGame(ctx context.Context, req *domain.UpdateGameRequest) (*domain.UpdateGameResponse, error) {
