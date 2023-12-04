@@ -23,7 +23,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-	if err := application.Start(); err != nil {
+	if err = application.Start(); err != nil {
 		log.Fatal(err)
 	}
 }

@@ -4,7 +4,7 @@ import (
 	"context"
 	"os"
 	"os/signal"
-	games "polygames/internal"
+	games "polygames"
 	"polygames/internal/core"
 	"polygames/internal/infrastructure/config"
 	"polygames/internal/infrastructure/logger"
@@ -78,6 +78,6 @@ func (app *application) Start() error {
 	return nil
 }
 
-func (app *application) Stop(ctx context.Context) error {
+func (app *application) Stop(context.Context) error {
 	return nil
 }
