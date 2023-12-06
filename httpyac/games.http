@@ -1,0 +1,64 @@
+# @import auth.http
+
+### TODO: All Games
+# @ref login
+GET {{BACKEND_URL}}/api/v1/games
+Authorization: Bearer {{login.accessToken}}
+Content-Type: application/json
+
+
+### FIXME: Create Game
+# @ref login
+# @name testgame
+POST {{BACKEND_URL}}/api/v1/games
+Authorization: Bearer {{login.accessToken}}
+Content-Type: application/json
+
+{
+    "user_id": 1,
+    "team_id": 1,
+    "description": "Fun action game",
+    "genre_id": 1,
+    "image_id": "actiongame.jpg",
+    "file_id": "actiongame.zip",
+    "likes": 0,
+    "views": 0,
+    "downloads": 0,
+    "created_at": "2022-03-01T00:00:00Z",
+    "updated_at": "2022-04-15T00:00:00Z"
+}
+
+
+### Game by id
+# @ref login
+# @ref testgame
+GET {{BACKEND_URL}}/api/v1/games/{{testgame.id}}
+Authorization: Bearer {{login.accessToken}}
+Content-Type: application/json
+
+
+### FIXME: Update Game
+# @ref login
+# @ref testgame
+PUT {{BACKEND_URL}}/api/v1/games/{{testgame.id}}
+{
+    "user_id": 2,
+    "team_id": 2,
+    "description": "Edited fun action game",
+    "genre_id": 2,
+    "image_id": "actiongame2.jpg",
+    "file_id": "actiongame2.zip",
+    "likes": 1,
+    "views": 2,
+    "downloads": 3,
+    "created_at": "2022-03-01T00:00:00Z",
+    "updated_at": "2022-04-15T00:00:00Z"
+}
+
+### Delete Game
+# @ref testgame
+# @ref login
+DELETE {{BACKEND_URL}}/api/v1/games/{{testgame.id}}
+Authorization: Bearer {{login.accessToken}}
+Content-Type: application/json
+
