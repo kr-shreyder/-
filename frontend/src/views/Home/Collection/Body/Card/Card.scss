@@ -2,7 +2,7 @@
 
 .card-game {
     position: relative;
-    background-color: $gray-300;
+    background-color: $background-extra;
     padding: 20px;
     border-radius: 30px;
     // width: 420px;
@@ -104,7 +104,7 @@
 }
 
 .card-game__more {
-    color: $white-100;
+    color: $text-primary;
     font-size: 24px;
     font-weight: 400;
     margin: 0;
@@ -123,7 +123,7 @@
         }
         & circle {
             transition: all 0.15s ease;
-            fill: $white-100;
+            fill: $text-primary;
         }
     }
 
@@ -132,12 +132,12 @@
             fill: $primary-color;
         }
         & circle {
-            fill: $white-100;
+            fill: $text-primary;
         }
         &:hover {
             & path {
                 transition: all 0.15s ease;
-                fill: $white-100;
+                fill: $text-primary;
             }
             & circle {
                 transition: all 0.15s ease;
@@ -152,7 +152,7 @@
     // max-width: 226px;
     align-items: center;
     z-index: 2;
-    background-color: $gray-100;
+    background-color: $background-secondary;
     text-decoration: none;
     display: flex;
     gap: 8px;
@@ -162,7 +162,7 @@
     border: 1px solid transparent;
     transition: all 0.15s ease;
     &:hover {
-        border-color: $white-300;
+        border-color: $background-extra;
     }
 }
 
@@ -176,13 +176,13 @@
 .card-game__role {
     font-size: 20px;
     font-weight: 500;
-    color: $white-200;
+    color: $text-detailed;
     margin: 0;
     padding: 0;
 }
 
 .card-game__name {
-    color: $white-100;
+    color: $text-primary;
     font-size: 20px;
     font-weight: 500;
     margin: 0;
@@ -228,7 +228,7 @@
         transform: scale(1.025);
         & rect {
             transition: all 0.15s ease;
-            fill: $white-100;
+            fill: $text-primary;
         }
         & path {
             transition: all 0.15s ease;

@@ -10,9 +10,14 @@ import PostForm from '../views/PostForm/PostForm'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Registration from '../views/Registration/Registration';
 import MenuWindow from './MenuWindow/MenuWindow';
+import { useTheme } from '../hooks/useTheme';
 
-const App = () => {    
+const App = () => {   
+    // const [theme, setTheme] = useTheme()
+    // const [theme, setTheme] = useLocalStorage('theme' ? 'dark' : 'light'); 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    // const [theme, setTheme] = useTheme()
+    // const [theme, setTheme] = useLocalStorage('theme' ? 'dark' : 'light');
 
     const openMenu = () => {
         setIsMenuOpen(true);

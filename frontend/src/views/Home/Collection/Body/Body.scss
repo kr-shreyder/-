@@ -1,7 +1,7 @@
 @import '@/variables.scss';
 .collection__body {
     margin-top: 6px;
-    background: $gray-200;
+    background: $background-detailed;
     padding: 40px;
     border-radius: 36px;
 }
@@ -27,7 +27,7 @@
 
 .collection__down-caption {
     display: flex;
-    align-self:flex-start;
+    align-self: flex-start;
     gap: 25px;
     margin-left: 72px;
 }

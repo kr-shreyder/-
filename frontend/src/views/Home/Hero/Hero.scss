@@ -28,12 +28,13 @@
 }
 
 .navigate__link {
-    color: $white-200;
+    color: $text-secondary;
     text-decoration: none;
+    transition: .3s;
     @include adaptiv-font(20, 14);
     line-height: 1;
     &--active {
-        color: $white-100;
+        color: $text-primary;
     }
     &:hover {
         opacity: 0.85;
@@ -61,13 +62,13 @@
 }
 
 .last-update__title {
-    color: $white-100;
+    color: $text-primary;
     font-weight: 400;
     @include adaptiv-font(22, 16);
 }
 
 .last-update__desc {
-    color: $white-200;
+    color: $text-detailed;
     @include adaptiv-font(15, 12);
     margin: 8px 0 0;
 }
@@ -79,7 +80,7 @@
 }
 
 .last-update__open {
-    color: $white-100;
+    color: $text-primary;
     @include adaptiv-font(20, 16);
     transition: all 0.15s ease;
     margin: 0;
@@ -100,7 +101,7 @@
     margin-left: 10px;
     transition: all 0.15s ease;
     &:hover {
-        background-color: $white-100;
+        background-color: $text-primary;
         & .last-update__arrow path{
             fill: $primary-color;
         }
@@ -119,7 +120,7 @@
     @include adaptiv-font(92, 36);
     font-weight: 500;
     
-    color: $white-100;
+    color: $text-primary;
     white-space: nowrap;
     line-height: 1;
     &--highlighted {
@@ -160,7 +161,7 @@
 
 .hero__card {
     position: relative;
-    background-color: $gray-200;
+    background-color: $background-detailed;
     width: 100%;
     height: 100%;
     border-radius: 30px;
@@ -215,7 +216,7 @@
     width: 150px;
     height: 38px;
     border-radius: 100px;
-    border: 1px solid $white-100;
+    border: 1px solid $text-primary;
     display: inline-flex;
     align-items: center;
     justify-content: center;
