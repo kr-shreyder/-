@@ -4,6 +4,7 @@ import AdSlider from './AdSlider/AdSlider';
 import AsideSettings from './AsideSettings/AsideSettings';
 import GamesList from './GamesList/GamesList';
 import cover1 from '@assets/cover-game4.png'
+import cover2 from '@assets/cover-game3.png'
 
 function Catalog() {
 
