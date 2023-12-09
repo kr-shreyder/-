@@ -31,3 +31,9 @@
     transform: translateY(-50%);
     right: 16px;
 }
+
+@media screen and (max-width: 768px) {
+    .search {
+        display: none;
+    }
+}

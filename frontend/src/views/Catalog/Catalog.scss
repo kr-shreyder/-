@@ -8,4 +8,13 @@
     max-width: 1440px;
     margin: 0 auto;
     padding: 40px 50px;
+    margin-left: 0;
+}
+
+@media screen and (max-width: 576px) {
+    .catalog {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+    }
 }

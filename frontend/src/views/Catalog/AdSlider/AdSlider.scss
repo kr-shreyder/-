@@ -11,3 +11,16 @@
     list-style: none;
     justify-content: space-between;
 }
+
+@media screen and (max-width: 576px) {
+    .ads-slider {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .ads-slider__list {
+        gap: 30px;
+    }
+}
+
