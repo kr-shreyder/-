@@ -3,12 +3,18 @@
     max-width: 170px;
     float: left;
     margin-right: 20px;
+    margin-left: 3.2rem;
+    margin-top: 2.5rem;
     padding-right: 25px;
 }
 .aside-settings__list {
     list-style: none;
     gap: 20px;
     margin-bottom: 50px;
+
+    &:last-child {
+        margin-bottom: 100%;
+    }
 }
 
 .aside-settings__title {
