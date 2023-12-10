@@ -2,8 +2,9 @@
 .aside-settings {
     max-width: 170px;
     float: left;
-    margin-right: 20px;
+    margin-top: 2.5rem;
     padding-right: 25px;
+    padding-left: 1.8rem
 }
 .aside-settings__list {
     list-style: none;
@@ -30,3 +31,14 @@
 .aside-settings__icon {
     margin-bottom: 6px;
 }
+
+@media screen and (width > 1200px) {
+    .aside-settings {
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+
+}
+

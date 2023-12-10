@@ -83,3 +83,9 @@
         opacity: 0.85;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .header__auth {
+        display: none;
+    }
+}
