@@ -8,20 +8,20 @@
     min-height: 50px;
     padding: 0 23px;
     font-size: 20px;
-    color: $text-primary;
+    color: var(--text-primary);
     line-height: 20.9px;
     border: none;
     background: none;
     border-radius: 25px;
-    background: $background-secondary;
+    background: var(--background-secondary);
     min-width: 400px;
-    transition: all 0.15s ease;
+    transition: all 0.5s ease;
     outline: 1px solid transparent;
     &:focus {
-        outline: 1px solid $text-secondary;
+        outline: 1px solid var(--text-secondary);
     }
     &::placeholder {
-        color: $text-secondary;
+        color: var(--text-secondary);
     }
 }
 
@@ -30,4 +30,5 @@
     top: 50%; /* позиция сверху по вертикали на 50% */
     transform: translateY(-50%);
     right: 16px;
+    stroke: var(--text-primary);
 }

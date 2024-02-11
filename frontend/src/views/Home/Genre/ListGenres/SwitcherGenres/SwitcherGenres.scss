@@ -3,7 +3,7 @@
     cursor: pointer;
     border-radius: 33px;
     gap: 8px;
-    border: 1px solid $background-secondary;
+    border: 1px solid var(--background-extra);
     background: transparent;
     padding: 0 0 0 64px;
     display: flex;
@@ -12,11 +12,11 @@
     width: 356px;
     &--active {
         border: 1px solid transparent;
-        background: $background-secondary;
+        background: var(--background-extra);
     }
     &:hover {
         transition: all 0.2s ease;
-        border: 1px solid $text-secondary;
+        border: 1px solid var(--text-secondary);
     }
 }
 
@@ -24,7 +24,7 @@
     font-size: 26px;
     line-height: 1;
     font-weight: 500;
-    color: $text-primary;
+    color: var(--text-primary);
     
     display: -webkit-box;
     -webkit-line-clamp: 1;
@@ -45,11 +45,11 @@
     &:hover {
         & path {
             transition: all 0.2s ease;
-            fill: $primary-color;
+            fill: var(--primary-color);
         }
         & circle {
             transition: all 0.2s ease;
-            fill: $text-primary;
+            fill: var(--text-primary);
         }
     }
 }

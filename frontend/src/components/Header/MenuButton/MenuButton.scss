@@ -9,4 +9,13 @@
     &:hover {
         opacity: 0.85;
     }
+
+    &__icon {
+        circle {
+            fill: var(--background-secondary)
+        }
+        path {
+            stroke: var(--text-primary)
+        }
+    }
 }

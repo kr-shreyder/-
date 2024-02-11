@@ -28,13 +28,13 @@
 }
 
 .navigate__link {
-    color: $text-secondary;
+    color: var(--text-secondary);
     text-decoration: none;
     transition: .3s;
     @include adaptiv-font(20, 14);
     line-height: 1;
     &--active {
-        color: $text-primary;
+        color: var(--text-primary);
     }
     &:hover {
         opacity: 0.85;
@@ -62,13 +62,13 @@
 }
 
 .last-update__title {
-    color: $text-primary;
+    color: var(--text-primary);
     font-weight: 400;
     @include adaptiv-font(22, 16);
 }
 
 .last-update__desc {
-    color: $text-detailed;
+    color: var(--text-detailed);
     @include adaptiv-font(15, 12);
     margin: 8px 0 0;
 }
@@ -80,7 +80,7 @@
 }
 
 .last-update__open {
-    color: $text-primary;
+    color: var(--text-primary);
     @include adaptiv-font(20, 16);
     transition: all 0.15s ease;
     margin: 0;
@@ -91,7 +91,7 @@
 }
 
 .last-update__circle {
-    background-color: $primary-color;
+    background-color: var(--primary-color);
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -101,9 +101,9 @@
     margin-left: 10px;
     transition: all 0.15s ease;
     &:hover {
-        background-color: $text-primary;
+        background-color: var(--text-primary);
         & .last-update__arrow path{
-            fill: $primary-color;
+            fill: var(--primary-color);
         }
     }
 }
@@ -120,11 +120,11 @@
     @include adaptiv-font(92, 36);
     font-weight: 500;
     
-    color: $text-primary;
+    color: var(--text-primary);
     white-space: nowrap;
     line-height: 1;
     &--highlighted {
-        color: $accent-color;
+        color: var(--accent-color);
     }
     &:nth-child(2){
         margin-left: 200px;
@@ -146,7 +146,7 @@
     @include adaptiv-font(22, 16);
     line-height: 25px;
     &--highlighted {
-        color: $primary-color;
+        color: var(--primary-color);
     }
 }
 
@@ -161,7 +161,7 @@
 
 .hero__card {
     position: relative;
-    background-color: $background-detailed;
+    background-color: var(--background-detailed);
     width: 100%;
     height: 100%;
     border-radius: 30px;
@@ -171,15 +171,20 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: $primary-color;
+        background-color: var(--primary-color);
+    }
+    &:nth-child(1) {
+        background-color: #151515;
     }
     &--bigger {
         grid-row: 1 / 3;
-        grid-column: 2 / 3;  
+        grid-column: 2 / 3;
+        background-color: var(--background-color);
     }
     &--higher {
         grid-row: 1 / 3;
-        grid-column: 5 / 6;  
+        grid-column: 5 / 6;
+        background-color: #0B0B0B;
     }
     z-index: -2;
 }
@@ -190,6 +195,15 @@
     margin: auto;
     height: 100%;
     width: fit-content;
+    background-color: #151515;
+
+    &-line {
+        color: white;
+    }
+}
+
+.hero__about {
+    color: #F9F9F9;
 }
 .hero__lines {
     position: absolute;
@@ -216,7 +230,7 @@
     width: 150px;
     height: 38px;
     border-radius: 100px;
-    border: 1px solid $text-primary;
+    border: 1px solid white;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -241,7 +255,7 @@
     max-width: 224px;
     margin: 38px auto 24px;
     &--highlighted {
-        color: $primary-color;
+        color: var(--primary-color);
     }
 }
 

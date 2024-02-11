@@ -1,10 +1,10 @@
 @import '@/variables.scss';
 
 .ad-band {
-    background-color: $background-detailed;
+    background-color: var(--background-detailed);
     display: flex;
     gap: 10px;
-    color: $text-primary;
+    color: var(--text-primary);
     text-decoration: none;
     padding: 10px;
     max-width: 352px;
@@ -46,12 +46,12 @@
     text-overflow: ellipsis;
     max-height: 42px;
     line-height: 18px;
-    color: $text-detailed;
+    color: var(--text-detailed);
 }
 
 .ad-band__tags {
     display: flex;
-    color: $accent-color;
+    color: var(--accent-color);
     font-size: 12px;
     gap: 10px;
 }

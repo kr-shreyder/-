@@ -1,7 +1,7 @@
 @import '@/variables.scss';
 .collection__body {
     margin-top: 6px;
-    background: $background-detailed;
+    background: var(--background-detailed);
     padding: 40px;
     border-radius: 36px;
 }
@@ -52,7 +52,7 @@
     margin: 0;
     padding-bottom: 20px;
     &--highlight {
-        color: $primary-color;
+        color: var(--primary-color);
     }
 }
 
