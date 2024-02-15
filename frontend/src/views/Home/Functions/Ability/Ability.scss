@@ -1,4 +1,4 @@
-@import '@/variables-dark.scss';
+@import '@/variables.scss';
 .ability {
     display: flex;
     position: relative;
@@ -12,7 +12,7 @@
             padding-left: 80px;
             & .ability__title {
                 transition: all 0.8s ease;
-                color: $white-100;
+                color: var(--text-primary);
             }
         }
         .ability__image {
@@ -49,7 +49,7 @@
 .ability__title {
     font-size: 96px;
     font-weight: 500;
-    color: $white-200;
+    color: var(--text-detailed);
     margin: 0;
     padding: 0;
 }
@@ -59,9 +59,9 @@
     height: 44px;
     font-size: 24px;
     align-items: center;
-    color: $white-200;
+    color: var(--text-detailed);
     border-radius: 30px;
-    border: 1px solid $white-200;
+    border: 1px solid var(--text-detailed);
     padding: 0 14px;
     margin: 0 0 12px;
     &::before {
@@ -91,7 +91,7 @@
 }
 
 .ability__desc {
-    color: $white-200;
+    color: var(--text-detailed);
     font-size: 24px;
     font-weight: 500;
 }
@@ -100,5 +100,9 @@
     &:hover {
         transition: all 0.15s ease;
         opacity: 0.85;
+    }
+
+    &_arrow {
+        stroke: var(--text-primary);
     }
 }

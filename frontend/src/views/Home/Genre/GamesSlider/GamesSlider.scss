@@ -1,4 +1,4 @@
-@import '@/variables-dark.scss';
+@import '@/variables.scss';
 
 .carousel {
   margin-top: 20px;
@@ -11,7 +11,7 @@
   margin-bottom: 30px;
 }
 .carousel__ganre {
-  border-left: 8px solid $primary-color;
+  border-left: 8px solid var(--primary-color);
   padding-left: 10px;
   font-size: 32px;
   font-weight: 500;
@@ -40,7 +40,7 @@
   justify-content: space-between;
   align-items: center;
   border-radius: 50px;
-  border: 2px solid $gray-100;
+  border: 2px solid var(--background-extra);
   padding: 12px 20px;
   width: 148px;
 }
@@ -60,7 +60,7 @@
   &--circle {
     width: 12px;
     height: 12px;
-    background-color: $gray-100;
+    background-color: var(--background-extra);
     border-radius: 12px;
     
   }
@@ -68,7 +68,7 @@
     cursor: default;
     width: 28px;
     height: 12px;
-    background-color: $accent-color;
+    background-color: var(--accent-color);
     border-radius: 12px;
     transition: all 1s;
   }

@@ -1,4 +1,4 @@
-@import '@/variables-dark.scss';
+@import '@/variables.scss';
 .menu-window {
     position: relative;
     display: flex;
@@ -10,7 +10,7 @@
     right: calc(min(33.33%, 500px) * -1);
     width: min(33.33%, 500px);
     height: calc(100% - 80px);
-    background-color: $background-color;
+    background-color: var(--background-color);
     transition: all 1.2s ease;
     border-radius: 12px 0 0 12px;
     border: 1px solid transparent;  
@@ -20,7 +20,7 @@
   .menu-window--open {
     right: 0;
     top: 40px;
-    border: 1px solid $gray-100;
+    border: 1px solid var(--background-secondary);
     // margin: 40px 12px;
   }
 
@@ -29,7 +29,7 @@
     padding-left: 60px;
     font-size: 16px;
     font-weight: 500;
-    color: $white-200;
+    color: var(--text-secondary);
     text-transform: uppercase;
 }
 
@@ -46,13 +46,13 @@
     font-weight: 500;
     font-size: 48px;
     text-decoration: none;
-    color: $white-200;
+    color: var(--text-secondary);
     display: flex;
     gap: 12px;
     align-items: flex-end;
     transition: all 0.5s ease;
     &--active {
-        color: $white-100;
+        color: var(--text-primary);
         padding-left: 20px;
     }
     &:hover {
@@ -63,7 +63,7 @@
 .menu-window__number{
     font-weight: 400;
     font-size: 14px;
-    border: 1px solid $white-200;
+    border: 1px solid var(--text-secondary);
     border-radius: 20px;
     width: fit-content;
     padding: 4px 8px;
@@ -79,10 +79,21 @@
     background: none;
     border: none;
     
-    transition: all 0.15s ease;
+    transition: all 0.1s ease;
     width: fit-content;
     &:hover {
         opacity: 0.85;
+    }
+
+    &_icon {
+        circle {
+            fill: var(--background-secondary);
+            transition: all 1.3s ease;
+        }
+        path {
+            stroke: var(--text-primary);
+            transition: all 1.3s ease;
+        }
     }
 }
 
@@ -92,7 +103,7 @@
     padding: 0 10px 10px 60px;
     font-size: 14px;
     font-weight: 700;
-    color: $white-200;
+    color: var(--text-secondary);
 }
 
 .menu-window__bg {

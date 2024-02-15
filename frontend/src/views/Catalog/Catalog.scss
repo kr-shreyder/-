@@ -1,9 +1,10 @@
-@import '@/variables-dark.scss';
+@import '@/variables.scss';
 
 .catalog {
     display: flex;
     justify-content: space-between;
 }
+
 .catalog__wrapper {
     max-width: 1440px;
     margin: 0 auto;

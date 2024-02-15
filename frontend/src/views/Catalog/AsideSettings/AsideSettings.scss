@@ -1,4 +1,4 @@
-@import '@/variables-dark.scss';
+@import '@/variables.scss';
 .aside-settings {
     max-width: 170px;
     float: left;
@@ -19,7 +19,7 @@
 
 .aside-settings__link{
     text-decoration: none;
-    color: $white-200;
+    color: var(--text-detailed);
     font-size: 20px;
     font-weight: 400;
     transition: all 0.15s ease;
