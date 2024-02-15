@@ -132,6 +132,7 @@
     &:nth-child(3){
         margin-left: 60px;
     }
+    transition: all 1.3s;
 }
 
 .hero__details {
@@ -166,6 +167,7 @@
     height: 100%;
     border-radius: 30px;
     overflow: hidden;
+    transition: all 1.3s ease;
 
     &:nth-child(5) {
         display: flex;

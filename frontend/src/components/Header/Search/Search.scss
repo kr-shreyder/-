@@ -15,7 +15,7 @@
     border-radius: 25px;
     background: var(--background-secondary);
     min-width: 400px;
-    transition: all 0.5s ease;
+    transition: all .5s ease;
     outline: 1px solid transparent;
     &:focus {
         outline: 1px solid var(--text-secondary);
@@ -31,4 +31,5 @@
     transform: translateY(-50%);
     right: 16px;
     stroke: var(--text-primary);
+    transition: all 1.3s;
 }

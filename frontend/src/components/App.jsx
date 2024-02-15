@@ -12,12 +12,8 @@ import Registration from '../views/Registration/Registration';
 import MenuWindow from './MenuWindow/MenuWindow';
 import { useTheme } from '../hooks/useTheme';
 
-const App = () => {   
-    // const [theme, setTheme] = useTheme()
-    // const [theme, setTheme] = useLocalStorage('theme' ? 'dark' : 'light'); 
+const App = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    // const [theme, setTheme] = useTheme()
-    // const [theme, setTheme] = useLocalStorage('theme' ? 'dark' : 'light');
 
     const openMenu = () => {
         setIsMenuOpen(true);

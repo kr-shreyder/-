@@ -79,7 +79,7 @@
     background: none;
     border: none;
     
-    transition: all 0.15s ease;
+    transition: all 0.1s ease;
     width: fit-content;
     &:hover {
         opacity: 0.85;
@@ -87,10 +87,12 @@
 
     &_icon {
         circle {
-            fill: var(--background-secondary)
+            fill: var(--background-secondary);
+            transition: all 1.3s ease;
         }
         path {
-            stroke: var(--text-primary)
+            stroke: var(--text-primary);
+            transition: all 1.3s ease;
         }
     }
 }

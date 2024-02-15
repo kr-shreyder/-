@@ -3,7 +3,7 @@
     cursor: pointer;
     background: none;
     border: none;
-    transition: all 0.15s ease;
+    transition: all 1.3s;
     
     width: 50px;
     &:hover {
@@ -12,10 +12,12 @@
 
     &__icon {
         circle {
-            fill: var(--background-secondary)
+            fill: var(--background-secondary);
+            transition: all 1.3s;
         }
         path {
-            stroke: var(--text-primary)
+            stroke: var(--text-primary);
+            transition: all 1.3s;
         }
     }
 }
