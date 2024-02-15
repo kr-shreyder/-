@@ -1,11 +1,12 @@
-@import '@/variables-dark.scss';
+@import '@/variables.scss';
 
 .card__content {
     height: 13.8rem;
     flex-direction: column;
     padding: 1rem 1rem 2rem;
     border-radius: 15px;
-    background-color: $gray-200;
+    background-color: var(--background-detailed);
+    transition: all 1.3s ease;
 }
 
 .card__cover {
@@ -26,7 +27,7 @@
 }
 
 .card__desc {
-    color: $white-300;
+    color: var(--text-secondary);
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;

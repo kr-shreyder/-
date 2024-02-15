@@ -62,6 +62,7 @@
     &::after {
         background-image: var(--stripesDark), var(--rainbow);
     }
+    transition: all 1.3s ease;
 }
 }
 .screen {

@@ -11,6 +11,7 @@
     background-size: cover;
     color: var(--text-primary);
     box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.50);
+    transition: all 1.3s ease;
 }
 
 .ad-banner__info {
@@ -20,6 +21,7 @@
     margin: 20px;
     padding: 20px;
     box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.50);
+    transition: all 1.3s ease;
 }
 
 .ad-banner__title {
