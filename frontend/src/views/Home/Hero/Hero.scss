@@ -65,18 +65,21 @@
     color: var(--text-primary);
     font-weight: 400;
     @include adaptiv-font(22, 16);
+    transition: all 1.3s ease;
 }
 
 .last-update__desc {
     color: var(--text-detailed);
     @include adaptiv-font(15, 12);
     margin: 8px 0 0;
+    transition: all 1.3s ease;
 }
 
 .last-update__link {
     text-decoration: none;
     display: flex;
     align-items: center;
+    transition: all 1.3s ease;
 }
 
 .last-update__open {
@@ -88,6 +91,7 @@
     &:hover {
         opacity: 0.85;
     }
+    transition: all 1.3s ease;
 }
 
 .last-update__circle {

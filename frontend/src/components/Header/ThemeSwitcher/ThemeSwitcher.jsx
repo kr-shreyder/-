@@ -11,7 +11,6 @@ const ThemeSwitcher = () => {
     const handleDarkThemeClick = () => {
         setTheme('dark')
     }
-    // const [status, setStatus] = useState('dark');
     return (
         <div className='theme-switcher'>
             <button onClick={handleDarkThemeClick} className={theme=='dark'?'theme-switcher__btn theme-switcher__btn--active':'theme-switcher__btn'} >
