@@ -1,6 +1,6 @@
 module polygames
 
-go 1.21.6
+go 1.21.7
 
 require (
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible
