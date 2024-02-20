@@ -1,8 +1,12 @@
 {
     "swagger": "2.0",
     "info": {
-        "title": "Sign In",
-        "contact": {}
+        "description": "Методы для аутентификации пользователя",
+        "title": "Аутентификация пользователя",
+        "contact": {},
+        "version": "1.0"
     },
+    "host": "localhost:8080",
+    "basePath": "/api/v1/auth/",
     "paths": {}
 }

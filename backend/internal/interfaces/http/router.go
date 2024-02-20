@@ -3,11 +3,16 @@ package http
 import (
 	"github.com/go-chi/chi/v5/middleware"
 	"github.com/go-chi/cors"
+	_ "github.com/swaggo/files"
 	httpSwagger "github.com/swaggo/http-swagger"
 	"net/http"
 	"os"
 	_ "polygames/cmd/docs"
 )
+
+func swaggerHandler(res http.ResponseWriter, req *http.Request) {
+	httpSwagger.WrapHandler(res, req)
+}
 
 func (s *server) initRouter() http.Handler {
 	r := s.router
@@ -25,7 +30,7 @@ func (s *server) initRouter() http.Handler {
 		AllowCredentials: false,
 	}))
 
-	r.Get("/swagger/*", httpSwagger.WrapHandler)
+	r.Get("/swagger/*", swaggerHandler)
 
 	r.Post("/api/v1/auth/sign-in", s.SignIn)
 	r.Post(`/api/v1/auth/sign-up`, s.SignUp)

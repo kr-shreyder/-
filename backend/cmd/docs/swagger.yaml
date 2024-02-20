@@ -1,5 +1,9 @@
+basePath: /api/v1/auth/
+host: localhost:8080
 info:
   contact: {}
-  title: Sign In
+  description: Методы для аутентификации пользователя
+  title: Аутентификация пользователя
+  version: "1.0"
 paths: {}
 swagger: "2.0"
