@@ -5,6 +5,7 @@ import (
 	"polygames/internal/domain"
 )
 
+// @title Sign In
 func (s *server) SignIn(w http.ResponseWriter, r *http.Request) {
 	var req domain.SignInRequest
 	if err := s.readJSON(&req, r); err != nil {
