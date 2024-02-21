@@ -14,17 +14,34 @@ const docTemplate = `{
     },
     "host": "{{.Host}}",
     "basePath": "{{.BasePath}}",
-    "paths": {}
+    "paths": {
+        "/sign-in": {
+            "post": {
+                "description": "Метод для авторизации пользователя",
+                "summary": "Авторизация пользователя",
+                "operationId": "signIn",
+                "responses": {}
+            }
+        },
+        "/sign-up": {
+            "post": {
+                "description": "Метод для регистрации пользователя",
+                "summary": "Регистрация пользователя",
+                "operationId": "signUp",
+                "responses": {}
+            }
+        }
+    }
 }`
 
 // SwaggerInfo holds exported Swagger Info so clients can modify it
 var SwaggerInfo = &swag.Spec{
 	Version:          "1.0",
 	Host:             "localhost:8080",
-	BasePath:         "/api/v1/auth/",
+	BasePath:         "/api/v1",
 	Schemes:          []string{},
-	Title:            "Аутентификация пользователя",
-	Description:      "Методы для аутентификации пользователя",
+	Title:            "Swagger Example API",
+	Description:      "This is a sample server Petstore server.",
 	InfoInstanceName: "swagger",
 	SwaggerTemplate:  docTemplate,
 	LeftDelim:        "{{",

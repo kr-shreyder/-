@@ -2,10 +2,17 @@ package main
 
 import (
 	"flag"
-	"github.com/joho/godotenv"
 	"log"
 	"polygames/internal/app"
+
+	"github.com/joho/godotenv"
 )
+
+// @title Swagger Example API
+// @version 1.0
+// @description This is a sample server Petstore server.
+// @BasePath /api/v1
+// @host     localhost:8080
 
 func main() {
 	readEnv := flag.String("env-file", ".env", "Path to application env file.")

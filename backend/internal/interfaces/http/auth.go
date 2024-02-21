@@ -1,19 +1,17 @@
 package http
 
 import (
-	_ "github.com/swaggo/http-swagger"
-	_ "github.com/swaggo/swag"
 	"net/http"
 	_ "polygames/cmd/docs"
 	"polygames/internal/domain"
+
+	_ "github.com/swaggo/http-swagger"
+	_ "github.com/swaggo/swag"
 )
 
 // @title          Аутентификация пользователя
 // @version        1.0
 // @description    Методы для аутентификации пользователя
-
-// @host     localhost:8080
-// @BasePath /api/v1/auth/
 
 // @Summary Авторизация пользователя
 // @Description Метод для авторизации пользователя

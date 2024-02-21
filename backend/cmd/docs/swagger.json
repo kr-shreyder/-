@@ -1,12 +1,29 @@
 {
     "swagger": "2.0",
     "info": {
-        "description": "Методы для аутентификации пользователя",
-        "title": "Аутентификация пользователя",
+        "description": "This is a sample server Petstore server.",
+        "title": "Swagger Example API",
         "contact": {},
         "version": "1.0"
     },
     "host": "localhost:8080",
-    "basePath": "/api/v1/auth/",
-    "paths": {}
+    "basePath": "/api/v1",
+    "paths": {
+        "/sign-in": {
+            "post": {
+                "description": "Метод для авторизации пользователя",
+                "summary": "Авторизация пользователя",
+                "operationId": "signIn",
+                "responses": {}
+            }
+        },
+        "/sign-up": {
+            "post": {
+                "description": "Метод для регистрации пользователя",
+                "summary": "Регистрация пользователя",
+                "operationId": "signUp",
+                "responses": {}
+            }
+        }
+    }
 }
