@@ -87,3 +87,11 @@
         background-position: 350% 50%, 350% 50%;
     }
 }
+
+img {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
