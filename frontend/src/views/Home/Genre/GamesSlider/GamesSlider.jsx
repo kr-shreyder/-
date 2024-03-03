@@ -43,6 +43,7 @@ const GamesSlider = () => {
 
   const prevSlide = () => {
     setSelectedIdx((prevIdx) => (prevIdx === 0 ? images.length - 1 : prevIdx - 1));
+    setSelectedDot((prevDot) => (prevDot === 1 ? 4: prevDot - 1));
     setIsButtonDisabled(true);
     setTimeout(() => {
       setIsButtonDisabled(false);
@@ -51,6 +52,7 @@ const GamesSlider = () => {
 
   const nextSlide = () => {
     setSelectedIdx((prevIdx) => (prevIdx === images.length - 1 ? 0 : prevIdx + 1));
+    setSelectedDot((prevDot) => (prevDot === 4 ? 1: prevDot + 1))
     setIsButtonDisabled(true);
     setTimeout(() => {
       setIsButtonDisabled(false);
@@ -65,7 +67,7 @@ const GamesSlider = () => {
     setIsButtonDisabled(true);
     setTimeout(() => {
       setIsButtonDisabled(false);
-    }, 600);
+    }, 2000);
   };
   const classImage = (idx) => {
         return idx === selectedIdx ? 'carousel__item carousel__item--selected' : 
