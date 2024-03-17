@@ -1,8 +1,8 @@
-@import '@/variables-dark.scss';
+@import '@/variables.scss';
 
 .card-game {
     position: relative;
-    background-color: $gray-300;
+    background-color: var(--background-secondary);
     padding: 20px;
     border-radius: 30px;
     // width: 420px;
@@ -23,6 +23,32 @@
             height: 100%;
             background-color: rgba(0, 0, 0, 0.3); /* Черный цвет с 30% прозрачностью */
           }
+
+        .card-game__title {
+            color: white;
+        }
+
+        .card-game__desc {
+            color: white;
+        }
+
+        .card-game__more {
+            color: white;
+        }
+
+        .card-game__arrow {
+            & circle {
+                transition: all 0.15s ease;
+                fill: white;
+            }
+
+            &:hover {
+                & path {
+                    fill: white;
+                }
+            }
+        }
+
     }
     &--mini {
         max-height: 325px;
@@ -104,7 +130,7 @@
 }
 
 .card-game__more {
-    color: $white-100;
+    color: var(--text-primary);
     font-size: 24px;
     font-weight: 400;
     margin: 0;
@@ -119,29 +145,29 @@
     &:hover {
         & path {
             transition: all 0.15s ease;
-            fill: $primary-color;
+            fill: var(--primary-color);
         }
         & circle {
             transition: all 0.15s ease;
-            fill: $white-100;
+            fill: var(--text-primary);
         }
     }
 
     &--solid {
         & path {
-            fill: $primary-color;
+            fill: var(--primary-color);
         }
         & circle {
-            fill: $white-100;
+            fill: var(--text-primary);
         }
         &:hover {
             & path {
                 transition: all 0.15s ease;
-                fill: $white-100;
+                fill: var(--text-primary);
             }
             & circle {
                 transition: all 0.15s ease;
-                fill: $primary-color;
+                fill: var(--primary-color);
             }
         }
     }
@@ -152,7 +178,7 @@
     // max-width: 226px;
     align-items: center;
     z-index: 2;
-    background-color: $gray-100;
+    background-color: var(--background-secondary);
     text-decoration: none;
     display: flex;
     gap: 8px;
@@ -162,7 +188,7 @@
     border: 1px solid transparent;
     transition: all 0.15s ease;
     &:hover {
-        border-color: $white-300;
+        border-color: var(--background-extra);
     }
 }
 
@@ -176,13 +202,13 @@
 .card-game__role {
     font-size: 20px;
     font-weight: 500;
-    color: $white-200;
+    color: var(--text-detailed);
     margin: 0;
     padding: 0;
 }
 
 .card-game__name {
-    color: $white-100;
+    color: var(--text-primary);
     font-size: 20px;
     font-weight: 500;
     margin: 0;
@@ -206,7 +232,7 @@
 }
 
 .card-game__rating {
-    color: $primary-color;
+    color: var(--primary-color);
     font-size: 18px;
     font-weight: 500;
     margin: 16px 0 0;
@@ -228,11 +254,11 @@
         transform: scale(1.025);
         & rect {
             transition: all 0.15s ease;
-            fill: $white-100;
+            fill: var(--text-primary);
         }
         & path {
             transition: all 0.15s ease;
-            fill: $primary-color;
+            fill: var(--primary-color);
         }
     }
 }

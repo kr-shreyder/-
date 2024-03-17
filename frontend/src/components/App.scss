@@ -1,8 +1,9 @@
-@import '@/variables-dark.scss';
+@import '@/variables.scss';
 .app {
-    color: $white-100;
+    color: var(--text-primary);
     font-size: 2em;
     background-attachment: fixed;
+    transition: all .5s;
 }
 
 .jumbo {
@@ -61,16 +62,17 @@
     &::after {
         background-image: var(--stripesDark), var(--rainbow);
     }
+    transition: all 1.3s ease;
 }
 }
 .screen {
-    background-color: $background-color;
+    background-color: var(--background-color);
     transform: translateX(0px);
     transition: all 1.3s ease;
     border: 1px solid transparent;
     &--left {
         border-radius: 12px;
-        border: 1px solid $gray-100;
+        border: 1px solid var(--background-secondary);
         margin: 40px;
         transform: translateX(calc(min(33.3%, 500px) * -1));
     }
@@ -84,4 +86,12 @@
     to {
         background-position: 350% 50%, 350% 50%;
     }
+}
+
+img {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
 }
