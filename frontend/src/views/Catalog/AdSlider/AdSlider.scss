@@ -1,7 +1,8 @@
-@import '@/variables-dark.scss';
+@import '@/variables.scss';
 
 .ads-slider {
-    display: flex !important;
+    display: grid !important;
+    grid-template-columns: 2fr 1fr;
     gap: 24px;
 }
 
@@ -11,3 +12,16 @@
     list-style: none;
     justify-content: space-between;
 }
+
+@media screen and (max-width: 576px) {
+    .ads-slider {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .ads-slider__list {
+        gap: 30px;
+    }
+}
+

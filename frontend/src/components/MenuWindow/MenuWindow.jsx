@@ -46,10 +46,9 @@ const MenuWindow = ({ isOpen, closeMenu }) => {
         </li>
       </ul>
       <button className="menu-window__button" onClick={closeMenu}>
-        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+        <svg className="menu-window__button_icon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
             <circle cx="25" cy="25" r="25" fill="#2F2F2F"/>
-            <path d="M19 19L32 32" stroke="#EFEFED" strokeWidth="1.88679" strokeLinecap="round"/>
-            <path d="M19 32L32 19" stroke="#EFEFED" strokeWidth="1.88679" strokeLinecap="round"/>
+            <path d="M19 19L32 32 M19 32L32 19" stroke="#EFEFED" strokeWidth="1.88679" strokeLinecap="round"/>
         </svg>
       </button>
       <p className="menu-window__copyright">

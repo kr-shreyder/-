@@ -1,19 +1,19 @@
-import "./App.scss";
-import React, { useState } from "react";
-import Header from "./Header/Header";
-import Footer from "./Footer/Footer";
-import Home from "../views/Home/Home";
-import Profile from "../views/Profile/Profile";
-import Catalog from "../views/Catalog/Catalog";
-import TeamsPage from "../views/TeamsPage/TeamsPage";
-import Auth from "../views/Auth/Auth";
-import PostForm from "../views/PostForm/PostForm";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Registration from "../views/Registration/Registration";
-import MenuWindow from "./MenuWindow/MenuWindow";
+import './App.scss'
+import React, {useState} from 'react'
+import Header from './Header/Header';
+import Home from '../views/Home/Home';
+import Profile from '../views/Profile/Profile'
+import Catalog from '../views/Catalog/Catalog'
+import TeamsPage from '../views/TeamsPage/TeamsPage'
+import Auth from '../views/Auth/Auth'
+import PostForm from '../views/PostForm/PostForm'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Registration from '../views/Registration/Registration';
+import MenuWindow from './MenuWindow/MenuWindow';
+import { useTheme } from '../hooks/useTheme';
 
 const App = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const openMenu = () => {
     setIsMenuOpen(true);

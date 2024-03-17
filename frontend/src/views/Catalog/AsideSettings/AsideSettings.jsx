@@ -75,28 +75,30 @@ const kits = [
 function AsideSettings() {
     return (  
         <aside className="aside-settings">
-            <ul className="aside-settings__list">
-                <img src={starMini1} alt="" className="aside-settings__icon" />
-                <li className="aside-settings__item">
-                    <h5 className="aside-settings__title">Жанры</h5>
-                </li>
-                {genres.map((item, index) => (
-                    <li className="aside-settings__item" key={index}>
-                        <a href={item.url} className="aside-settings__link">{item.name}</a>
+            <div className="aside-settings__lists">
+                <ul className="aside-settings__list">
+                    <img src={starMini1} alt="" className="aside-settings__icon" />
+                    <li className="aside-settings__item">
+                        <h5 className="aside-settings__title">Жанры</h5>
                     </li>
-                ))}
-            </ul>
-            <ul className="aside-settings__list">
-                <img src={starMini2} alt="" className="aside-settings__icon" />
-                <li className="aside-settings__item">
-                    <h5 className="aside-settings__title">Наборы</h5>
-                </li>
-                {kits.map((item, index) => (
-                    <li className="aside-settings__item" key={index}>
-                        <a href={item.url} className="aside-settings__link">{item.name}</a>
+                    {genres.map((item, index) => (
+                        <li className="aside-settings__item" key={index}>
+                            <a href={item.url} className="aside-settings__link">{item.name}</a>
+                        </li>
+                    ))}
+                </ul>
+                <ul className="aside-settings__list">
+                    <img src={starMini2} alt="" className="aside-settings__icon" />
+                    <li className="aside-settings__item">
+                        <h5 className="aside-settings__title">Наборы</h5>
                     </li>
-                ))}
-            </ul>
+                    {kits.map((item, index) => (
+                        <li className="aside-settings__item" key={index}>
+                            <a href={item.url} className="aside-settings__link">{item.name}</a>
+                        </li>
+                    ))}
+                </ul>
+            </div>
         </aside>
     );
 }

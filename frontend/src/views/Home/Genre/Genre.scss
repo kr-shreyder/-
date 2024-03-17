@@ -1,4 +1,4 @@
-@import '@/variables-dark.scss';
+@import '@/variables.scss';
 .genre {
     margin-top: 145px;
 }
@@ -29,6 +29,7 @@
 .genre__number {
     font-size: 26px;
     font-weight: 400;
+    padding-top: 26px;
 }
 
 .genre__body {
