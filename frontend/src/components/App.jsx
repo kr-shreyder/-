@@ -15,34 +15,34 @@ import { useTheme } from '../hooks/useTheme';
 const App = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    const openMenu = () => {
-        setIsMenuOpen(true);
-    }
+  const openMenu = () => {
+    setIsMenuOpen(true);
+  };
 
-    const closeMenu = () => {
-        setIsMenuOpen(false);
-    }
-    return (
-        <div className='app'>
-            {isMenuOpen && <div className="jumbo jumbo--dark">
-            </div>}
-            <BrowserRouter>
-                <div className={isMenuOpen?'screen screen--left':'screen'}>
-                    <Header openMenu={openMenu}/>
-                    <Routes>
-                        <Route path="/" element={<Home/>}/>
-                        <Route path="/profile" element={<Profile/>}/>
-                        <Route path="/games" element={<Catalog/>}/>
-                        <Route path="/teams" element={<TeamsPage/>}/>
-                        <Route path="/auth" element={<Auth/>}/>
-                        <Route path="/register" element={<Registration/>}/>
-                        <Route path="/post-form" element={<PostForm/>}/>
-                    </Routes>
-                </div>
-                <MenuWindow isOpen={isMenuOpen} closeMenu={closeMenu}/>
-            </BrowserRouter>
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+  return (
+    <div className="app">
+      {isMenuOpen && <div className="jumbo jumbo--dark"></div>}
+      <BrowserRouter>
+        <div className={isMenuOpen ? "screen screen--left" : "screen"}>
+          <Header openMenu={openMenu} />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/games" element={<Catalog />} />
+            <Route path="/teams" element={<TeamsPage />} />
+            <Route path="/auth" element={<Auth />} />
+            <Route path="/register" element={<Registration />} />
+            <Route path="/post-form" element={<PostForm />} />
+          </Routes>
+          <Footer />
         </div>
-    );
+        <MenuWindow isOpen={isMenuOpen} closeMenu={closeMenu} />
+      </BrowserRouter>
+    </div>
+  );
 };
 
 export default App;
