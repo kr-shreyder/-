@@ -34,7 +34,13 @@
 
 .genre__body {
     display: flex;
-    justify-content: space-between;
-    gap: 140px;
+    @media (min-width: 1440px) {
+        justify-content: space-between;
+        gap: 10vw;
+    }
+    @media (max-width: 1439px) {
+        flex-direction: column;
+        gap: 5vh;
+    }
     margin-top: 40px;
 }
