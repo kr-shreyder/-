@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Hero.scss';
 import decorateStarMini from '@assets/decorate-star-mini.svg';
 import cover from '@assets/cover-game1.png';
@@ -27,7 +28,7 @@ const Hero = () => {
                                 <a href="#popular" className="navigate__link">Популярное</a>
                             </li>
                             <li className="navigate__item">
-                                <a href="/" className="navigate__link">О нас</a>
+                                <Link to="/about-us" className="navigate__link">О нас</Link>
                             </li>
                         </ul>
                     </nav>

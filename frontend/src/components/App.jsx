@@ -7,6 +7,7 @@ import Catalog from '../views/Catalog/Catalog'
 import TeamsPage from '../views/TeamsPage/TeamsPage'
 import Auth from '../views/Auth/Auth'
 import PostForm from '../views/PostForm/PostForm'
+import AboutUs from '../views/AboutUs/AboutUs';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Registration from '../views/Registration/Registration';
 import MenuWindow from './MenuWindow/MenuWindow';
@@ -37,6 +38,7 @@ const App = () => {
                         <Route path="/auth" element={<Auth/>}/>
                         <Route path="/register" element={<Registration/>}/>
                         <Route path="/post-form" element={<PostForm/>}/>
+                        <Route path='/about-us' element={<AboutUs/>}/>
                     </Routes>
                 </div>
                 <MenuWindow isOpen={isMenuOpen} closeMenu={closeMenu}/>
