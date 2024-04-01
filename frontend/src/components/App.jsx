@@ -11,14 +11,14 @@ import AboutUs from '../views/AboutUs/AboutUs';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Registration from '../views/Registration/Registration';
 import MenuWindow from './MenuWindow/MenuWindow';
-import { useTheme } from '../hooks/useTheme';
+import Footer from './Footer/Footer';
 
 const App = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    const openMenu = () => {
-        setIsMenuOpen(true);
-    }
+  const openMenu = () => {
+    setIsMenuOpen(true);
+  };
 
     const closeMenu = () => {
         setIsMenuOpen(false);

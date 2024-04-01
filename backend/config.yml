@@ -1,0 +1,20 @@
+database_conn_string: postgres://postgres:12345678@postgresql:5432/polygames?sslmode=disable
+app:
+  jwt:
+    access_expiration_minutes: 15
+    refresh_expiration_days: 7
+    access_token_secret_key: helloworld
+    refresh_token_secret_key: abc123
+interfaces:
+  http:
+    port: 8080
+    host: 0.0.0.0
+logger:
+  log_to_console: true
+  encode_logs_as_json: true
+  log_to_file: true
+  directory: logs
+  filename: logs.log
+  max_size: 10
+  max_backups: 1
+  max_age: 10
