@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Footer.scss";
 import logo from "@assets/logo.svg";
 import vk from "@assets/vk.svg";
 import tg from "@assets/tg.svg";
+import { useLocation } from "react-router-dom";
 
-const Footer = () => {
+const Footer = ({ setIsVisible }) => {
+  const location = useLocation();
+  const pages = ['/about-us']
+
+  useEffect(() => {
+    if (!pages.includes(location.pathname)){
+      setIsVisible(false)
+    }
+  }, [location.pathname]);
+
   return (
     <footer className="footer">
       <div className="footer__wrapper">

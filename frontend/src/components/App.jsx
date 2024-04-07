@@ -15,6 +15,7 @@ import Footer from './Footer/Footer';
 
 const App = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isFooterVisible, setIsFooterVisible] = useState(false);
 
   const openMenu = () => {
     setIsMenuOpen(true);
@@ -38,8 +39,9 @@ const App = () => {
                         <Route path="/auth" element={<Auth/>}/>
                         <Route path="/register" element={<Registration/>}/>
                         <Route path="/post-form" element={<PostForm/>}/>
-                        <Route path='/about-us' element={<AboutUs/>}/>
+                        <Route path='/about-us' element={<AboutUs setIsFooterVisible={setIsFooterVisible}/>}/>
                     </Routes>
+                    {isFooterVisible && <Footer setIsVisible={setIsFooterVisible}/>}
                 </div>
                 <MenuWindow isOpen={isMenuOpen} closeMenu={closeMenu}/>
             </BrowserRouter>
