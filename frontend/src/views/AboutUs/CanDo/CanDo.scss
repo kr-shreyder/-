@@ -1,6 +1,31 @@
 @import '@/variables.scss';
 .can-do {
-    padding: 8vh 5vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 80vh;
+    margin-top: 30vh;
+    padding: 0 5vw;
     border-radius: 40px;
     background: var(--background-secondary);
+    &__play-text {
+        padding-right: 20%;
+    }
+    &__group-text {
+        padding-right: 14%;
+    }
+}
+
+.can-do div {
+    display: flex;
+    gap: 2vw;
+    padding: 10% 13%;
+    align-items: center;
+}
+
+.can-do img{
+    width: 80px;
+    height: 80px;
+    background-color: var(--accent-color);
+    border-radius: 25%;
+    padding: 2%;
 }
