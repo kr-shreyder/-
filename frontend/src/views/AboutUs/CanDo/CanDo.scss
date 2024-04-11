@@ -23,9 +23,15 @@
 }
 
 .can-do img{
-    width: 80px;
-    height: 80px;
+    width: 85px;
+    height: 85px;
+    padding: 2%;
     background-color: var(--accent-color);
     border-radius: 25%;
-    padding: 2%;
+}
+
+.can-do img:not(.can-do__star){
+    width: 60px;
+    height: 60px;
+    padding: 5%;
 }
