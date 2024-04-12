@@ -41,7 +41,7 @@ const App = () => {
                         <Route path="/post-form" element={<PostForm/>}/>
                         <Route path='/about-us' element={<AboutUs setIsFooterVisible={setIsFooterVisible}/>}/>
                     </Routes>
-                    {isFooterVisible && <Footer setIsVisible={setIsFooterVisible}/>}
+                    {/* {isFooterVisible && <Footer setIsVisible={setIsFooterVisible}/>} */}
                 </div>
                 <MenuWindow isOpen={isMenuOpen} closeMenu={closeMenu}/>
             </BrowserRouter>

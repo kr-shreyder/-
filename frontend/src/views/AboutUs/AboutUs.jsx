@@ -3,6 +3,7 @@ import Preview from './Preview/Preview';
 import './AboutUs.scss';
 import WeAre from './WeAre/WeAre';
 import CanDo from './CanDo/CanDo';
+import ForDevelopers from './ForDevelopers/ForDevelopers';
 const AboutUs = ({ setIsFooterVisible }) => {
     useEffect(() => {
         setIsFooterVisible(true);
@@ -13,6 +14,7 @@ const AboutUs = ({ setIsFooterVisible }) => {
             <Preview />
             <WeAre />
             <CanDo />
+            <ForDevelopers />
         </main>
     );
 };
