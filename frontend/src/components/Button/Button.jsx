@@ -1,9 +1,17 @@
 import React from 'react';
+import './Button.scss';
+import arrow from '@assets/arrow2.svg';
 
-const Button = () => {
+const Button = ({ text }) => {
     return (
-        <a className='link'>
-        </a>
+        <button className='styled-button'>
+            <img
+                src={arrow}
+                alt='Arrow'
+                className='styled-button__arrow'
+            />
+            { text }
+        </button>
     );
 };
 
